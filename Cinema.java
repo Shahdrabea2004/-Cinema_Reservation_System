@@ -54,8 +54,6 @@ class Cinema
         public static final String CYAN_BG = "\033[46m";   // CYAN
         public static final String WHITE_BG = "\033[47m";  // WHITE
     }
-    
-    
 
     //1- ask the user about his info and save it
     public static void TakeInfo()
@@ -222,13 +220,13 @@ class Cinema
         }
 
     }
-    //7- caculate recipt
+    //8- caculate recipt
     public static double calculateTotal()
     {
         return totalSnackCost+filmPrices[Choosefilmstore-1];
     }
 
-    //8- print the recept and the information that the user chose
+    //9- print the recept and the information that the user chose
     public static void Recipt() {
         // Thank the user for reserving
         System.out.print(ConsoleColor.MAGENTA + "\n                            Thanks " + namestore + " for reserving at the cinema. Your information is as follows: " + ConsoleColor.RESET + "\n\n");
@@ -310,7 +308,7 @@ class Cinema
             ChooseSnacks();
         }
         clearConsole();
-        //6- print the recept and the information that the user chose
+        //8- print the recept and the information that the user chose
         clearConsole();
         Recipt();
 
